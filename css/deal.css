@@ -1,0 +1,30 @@
+.button
+{
+	width: 65px;
+	height: 35px;
+	font-size: 15px;
+}
+.hidden /* 选中效果*/
+{
+background-color:#4403FF;;/*背景颜色*/
+font-weight: 600;/*加粗*/
+color:aliceblue;;/*文字颜色*/
+}
+tr
+{
+	align-content: center;
+}
+td
+{
+	text-align: center
+}
+.removebtn 
+{
+	width:100%;
+	height:30px;
+	}
+.selectbtn 
+{
+	width:100%;
+	height:30px;
+}

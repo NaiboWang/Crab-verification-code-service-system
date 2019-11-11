@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册demo</title>
+</head>
+<script src="js/jquery.js"></script>
+<script src="js/confirm.js"></script>
+<link href="css/buttons.css" rel="stylesheet">
+<body>
+<div align="center">
+	<h1>欢迎注册</h1>
+	<p>
+  <form action="demosub.php" method="post">
+	  <label for="textfield">用户名:</label>
+      <input type="text" name="textfield" id="textfield">
+	</p>
+	<p>
+	  <label for="textfield2">密码:</label>
+      <input type="text" name="textfield2" id="textfield2">
+    </p>
+	<p>
+	  <label for="textfield3">确认密码:</label>
+      <input type="text" name="textfield3" id="textfield3">
+    </p>
+	<p>
+	  <label for="textfield4">昵称:</label>
+      <input type="text" name="textfield4" id="textfield4">
+    </p>
+	<p><button id="scaptcha" class="button button-royal button-rounded button-large" disabled >点击此处验证</button></p>
+	<input type="hidden" id="vcaptcha" name="vcaptcha" value="-1"/>
+	<p>
+	  <label for="textfield5">验证结果:</label>
+      <input type="text" width="80px" value="未验证" style="border: none;font-size: 17px;width:80px" readonly name="textfield5" id="textfield5">
+	</p>
+	<p>
+	
+  </p>
+	<p>
+	  <input style="width:100px;height: 60px;font-size: 25px;"width="200px" height="100px" type="submit" name="submit" id="submit" disabled value="提交">
+	</p>
+	  </form>
+</div>
+</body>
+<script>
+function recover()//将提交按钮置为可操作
+{
+	$("#submit").attr("disabled",false);
+	$("#textfield5").val("验证成功");
+}
+	getconfirm(recover);//调用验证函数
+	
+</script>
+</html>
